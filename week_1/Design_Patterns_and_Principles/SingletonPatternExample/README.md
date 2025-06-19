@@ -71,7 +71,3 @@ SingletonPatternExample/
 _MERN Stack Developer & Java Enthusiast_
 
 ---
-
-### 🛡 License
-
-This project is licensed under the **MIT License**.
