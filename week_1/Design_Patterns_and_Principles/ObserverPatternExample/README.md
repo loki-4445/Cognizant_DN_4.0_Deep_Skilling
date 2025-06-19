@@ -1,72 +1,75 @@
-# FactoryMethodPatternExample
+# 👁️ ObserverPatternExample
 
-## 🧑‍🏭🏭 Exercise 2: Implementing the Factory Method Pattern
+## 💼 Exercise 7: Implementing the Observer Pattern
+
+---
 
 ### 📘 Scenario
 
-You are building a **Document Management System** that must support the creation of various document types—Word, PDF, and Excel—without tightly coupling the client code to specific document classes. This project applies the **Factory Method Design Pattern** to accomplish this.
+You are developing a **Stock Market Monitoring Application** where multiple clients (e.g., mobile apps, web apps) must be **notified automatically** when stock prices change. The **Observer Pattern** helps in broadcasting updates to all registered observers.
 
 ---
 
-### 🧱 Project Structure
+### ✅ Implementation Steps
 
-FactoryMethodPatternExample/
-├── Document.java # Abstract base/interface for all document types
-├── WordDocument.java # Concrete Word document class
-├── PdfDocument.java # Concrete PDF document class
-├── ExcelDocument.java # Concrete Excel document class
-│
-├── DocumentFactory.java # Abstract factory class
-├── WordDocumentFactory.java # Factory for creating Word documents
-├── PdfDocumentFactory.java # Factory for creating PDF documents
-├── ExcelDocumentFactory.java # Factory for creating Excel documents
-│
-├── FactoryPatternDemo.java # Main class for testing the factory pattern
-├── output.png # Screenshot of the program output
-└── README.md
+1. **Created Java Project**
+   - Project name: `ObserverPatternExample`
 
+2. **Defined Subject Interface**
+   - `Stock.java` interface with methods:
+     - `registerObserver(Observer o)`
+     - `removeObserver(Observer o)`
+     - `notifyObservers()`
 
+3. **Implemented Concrete Subject**
+   - `StockMarket.java` implements `Stock`
+   - Maintains a list of registered observers
+   - Calls `update()` on observers when stock price changes
 
----
+4. **Defined Observer Interface**
+   - `Observer.java` with method `update(double price)`
 
-### ✅ Implementation Summary
+5. **Implemented Concrete Observers**
+   - `MobileApp.java` and `WebApp.java` implement `Observer`
+   - Print the new stock price when notified
 
-1. **Abstract Document Class / Interface**
-   - `Document.java` defines a generic document interface or abstract class.
-
-2. **Concrete Document Classes**
-   - `WordDocument`, `PdfDocument`, and `ExcelDocument` implement the `Document` abstraction.
-
-3. **Abstract Factory**
-   - `DocumentFactory.java` declares the abstract method `createDocument()`.
-
-4. **Concrete Factories**
-   - `WordDocumentFactory`, `PdfDocumentFactory`, and `ExcelDocumentFactory` implement `createDocument()` to return respective document types.
-
-5. **Test Class**
-   - `FactoryPatternDemo.java` creates and manages documents using their respective factories without knowing the internal implementation.
+6. **Tested the Pattern**
+   - `ObserverPatternDemo.java` demonstrates observer registration, stock updates, and notifications
 
 ---
 
-🖼️ ![Output Screenshot](./output.png)
+### 📁 Project Structure
+
+ObserverPatternExample/  
+├── Stock.java  
+├── StockMarket.java  
+├── Observer.java  
+├── MobileApp.java  
+├── WebApp.java  
+├── ObserverPatternDemo.java  
+├── *.class files  
+├── output.png  
+└── README.md  
+
+
+🖼️ ![Sample Output](./output.png)
 
 ---
 
-### 🔍 Concepts Demonstrated
+### 🧠 Pattern Insight
 
-- Factory Method Design Pattern
-- Encapsulation and Abstraction
-- Code Reusability and Maintainability
-- Decoupling object creation from implementation
+- **Observer Pattern** is used when a change in one object (subject) needs to notify a list of dependents (observers).
+- Promotes **loose coupling** between the subject and its observers.
+- Frequently used in **event-driven systems**, **GUIs**, and **real-time monitoring** apps.
 
 ---
 
 ### ▶️ How to Run
 
-1. Clone or download the repository.
-2. Compile the project:
+1. Compile:
    ```bash
    javac *.java
-3. Run the project:
+2. Run:
    ```bash
-   java FactoryPatternDem
+   java ObserverPatternDemo
+
