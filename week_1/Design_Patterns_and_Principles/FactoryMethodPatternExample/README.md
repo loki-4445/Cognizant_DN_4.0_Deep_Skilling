@@ -37,18 +37,18 @@ You are developing a **Document Management System** that needs to create differe
 
 ### 📁 Project Structure
 
-FactoryMethodPatternExample/
-├── Document.java / Document.class
-├── WordDocument.java / WordDocument.class
-├── PdfDocument.java / PdfDocument.class
-├── ExcelDocument.java / ExcelDocument.class
-├── DocumentFactory.java / DocumentFactory.class
-├── WordDocumentFactory.java / WordDocumentFactory.class
-├── PdfDocumentFactory.java / PdfDocumentFactory.class
-├── ExcelDocumentFactory.java / ExcelDocumentFactory.class
-├── FactoryPatternDemo.java / FactoryPatternDemo.class
-├── output.png
-└── README.md
+FactoryMethodPatternExample/  
+  ├── Document.java / Document.class  
+  ├── WordDocument.java / WordDocument.class  
+  ├── PdfDocument.java / PdfDocument.class  
+  ├── ExcelDocument.java / ExcelDocument.class  
+  ├── DocumentFactory.java / DocumentFactory.class  
+  ├── WordDocumentFactory.java / WordDocumentFactory.class  
+  ├── PdfDocumentFactory.java / PdfDocumentFactory.class  
+  ├── ExcelDocumentFactory.java / ExcelDocumentFactory.class  
+  ├── FactoryPatternDemo.java / FactoryPatternDemo.class  
+  ├── output.png  
+  └── README.md  
 
 
 🖼️ ![Output Screenshot](./output.png)
