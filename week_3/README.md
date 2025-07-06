@@ -1,62 +1,45 @@
-# Spring Core Maven 2
+# Spring Core with Maven
 
-This project demonstrates the basics of Spring Core using Maven as the build tool. It is part of Week 3 assignments for Cognizant DN 4.0 Deep Skilling.
+Spring Core is the foundational module of the Spring Framework, focusing on dependency injection (DI) and inversion of control (IoC). This allows you to build loosely-coupled, testable applications.
 
-## Project Structure
+## Key Concepts
 
-```
-week_3/Spring_Core_Maven_2/
-│
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   └── resources/
-│   └── test/
-├── outputs/
-│   └── output.png
-├── pom.xml
-└── README.md
-```
+- **Dependency Injection (DI):** Spring manages your object dependencies, injecting them at runtime instead of hard-coding them.
+- **IoC Container:** The Spring container creates and manages beans (your application objects) based on configuration provided via XML, annotations, or Java configuration.
+- **Maven Integration:** Maven is used for build automation and dependency management. Add Spring dependencies in `pom.xml` to get started.
 
-## How to Run
+## Typical Workflow
 
-1. **Build the project using Maven:**
-   ```
-   mvn clean install
-   ```
-
-2. **Run the main class:**
-   - Use your IDE to run the main Java class, or
-   - Run from the terminal (replace `MainClass` with your actual main class name):
-     ```
-     mvn exec:java -Dexec.mainClass="com.package.MainClass"
-     ```
-
-## Output
-
-After running the application, the output can be found in the `outputs` folder.
-
-### Screenshot of Output
-
-![Output Screenshot](outputs/output.png)
-
-*The image above shows a sample run of the application, displaying the results of Spring bean initialization and dependency injection as configured in the project.*
-
-## Features Demonstrated
-
-- Spring Bean configuration (via XML or annotations)
-- Dependency Injection (Constructor/Setter)
-- Maven project structure and dependency management
-
-## Dependencies
-
-- Java 8+
-- Spring Core (as specified in `pom.xml`)
-- Maven
-
-## Author
-
-- [loki-4445](https://github.com/loki-4445)
+1. Add Spring dependencies to your `pom.xml`.
+2. Configure beans via XML or annotations.
+3. Use `ApplicationContext` to retrieve and use beans in your application.
 
 ---
-This is an educational example for Cognizant DN 4.0 Deep Skilling Week 3.
+
+# Spring Data JPA with Hibernate
+
+Spring Data JPA is a Spring module that makes it easy to work with relational databases using the Java Persistence API (JPA). Hibernate is the default JPA provider.
+
+## Key Concepts
+
+- **JPA:** Standard API for ORM (Object-Relational Mapping) in Java. Maps Java objects to database tables.
+- **Hibernate:** The most widely used JPA implementation, handling database operations under the hood.
+- **Repositories:** Spring Data provides interfaces like `JpaRepository` to automatically generate basic CRUD operations.
+- **Entities:** Classes annotated with `@Entity` represent database tables.
+
+## Typical Workflow
+
+1. Add Spring Data JPA and Hibernate dependencies in `pom.xml`.
+2. Configure database connection in `application.properties` or `application.yml`.
+3. Annotate your model classes with `@Entity`.
+4. Create repository interfaces extending `JpaRepository` or `CrudRepository`.
+5. Use the repository in your service or controller—no need to write boilerplate SQL.
+
+---
+
+## Benefits
+
+- **Spring Core:** Clean, decoupled code using DI and IoC.
+- **Spring Data JPA:** Rapid data access layer development with minimal code, leveraging powerful ORM features of Hibernate.
+
+> For more details, see Spring and Hibernate official documentation.
