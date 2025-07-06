@@ -64,7 +64,7 @@ Verifies the updated result with a `GET` request after performing a `PUT`.
 ### ❌ DELETE Method
 Demonstrates a `DELETE` request to remove a record.
 
-![DELETE Method](./delete_method.png)
+![DELETE Method](.delete_method.png)
 
 ---
 
