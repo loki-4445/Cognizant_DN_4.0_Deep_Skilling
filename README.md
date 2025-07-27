@@ -6,16 +6,19 @@ Welcome to the **Week-by-Week Journey** of Cognizant’s **Digital Nurture 4.0 �
 
 ## 📅 Timeline Overview
 
-| Week     | Topics Covered                                                                         |
-| -------- | -------------------------------------------------------------------------------------- |
-| ✅ Week 1 | [Design Principles & Patterns, DSA](#week-1---design-principles--patterns-dsa)         |
-| ⏳ Week 2 | [PL/SQL Programming, TDD with JUnit & Mockito](#week-2---plsql--unit-testing)          |
-| ⏳ Week 3 | [Java OOPs, Collections, Streams, Lambda, File I/O](#week-3---core-java-advanced-java) |
-| ⏳ Week 4 | [Spring Core, Spring Boot, Maven](#week-4---spring-core-boot--maven)                   |
-| ⏳ Week 5 | [JPA, Hibernate, Spring Data JPA](#week-5---jpa--hibernate)                            |
-| ⏳ Week 6 | [Spring REST, Microservices](#week-6---spring-rest--microservices)                     |
-| ⏳ Week 7 | [ReactJS, Angular](#week-7---frontend-frameworks)                                      |
-| ⏳ Week 8 | [DevOps, Git, Cloud, Final Project, KBA Revision](#week-8---devops--final-project)     |
+| **Week** | **Modules Covered**                                                                                                                                       |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Week 1   | Design Patterns & DSA [Repository Link](https://github.com/loki-4445/Cognizant_DN_4.0_Deep_Skilling/tree/main/week_1)                                     |
+| Week 2   | PL/SQL & Unit Testing [Repository Link](https://github.com/loki-4445/Cognizant_DN_4.0_Deep_Skilling/tree/main/week_2)                                     |
+| Week 3   | Spring Core, Maven, Spring Data JPA [Repository Link](https://github.com/loki-4445/Cognizant_DN_4.0_Deep_Skilling/tree/main/week_3)                       |
+| Week 4   | Spring REST [Repository Link](https://github.com/loki-4445/Cognizant_DN_4.0_Deep_Skilling/tree/main/week_4)                                               |
+| Week 5   | Microservices [Repository Link](https://github.com/loki-4445/Cognizant_DN_4.0_Deep_Skilling/tree/main/week_5)                                             |
+| Week 6   | React [Repository Link](https://github.com/loki-4445/Cognizant_DN_4.0_Deep_Skilling/tree/main/week_6)                                                     |
+| Week 7   | React [Repository Link](https://github.com/loki-4445/Cognizant_DN_4.0_Deep_Skilling/tree/main/week_7)                                                     |
+| Week 8   | GIT, CI/CD, DevOps, Docker, Cloud, and GenAI fundamentals [Repository Link](https://github.com/loki-4445/Cognizant_DN_4.0_Deep_Skilling/tree/main/week_8) |
+
+
+
 
 
 ---
